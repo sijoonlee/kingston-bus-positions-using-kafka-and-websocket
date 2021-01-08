@@ -73,7 +73,7 @@ public class GtfsRealtimeKingston {
 
     public static void main(String[] args) throws Exception {
         GtfsRealtimeKingston gtfs = new GtfsRealtimeKingston();
-        gtfs.loopRun(new URL("https://api.cityofkingston.ca/gtfs-realtime/vehicleupdates.pb"), DEFAULT.updateInterval);
+        gtfs.loopRun(new URL(DEFAULT.gtfsKingstonVehiclesSpec), DEFAULT.updateInterval);
 //        gtfs.run(new URL("https://api.cityofkingston.ca/gtfs-realtime/tripupdates.pb"));
 //        gtfs.run(new URL("https://api.cityofkingston.ca/gtfs-realtime/alerts.pb"));
 

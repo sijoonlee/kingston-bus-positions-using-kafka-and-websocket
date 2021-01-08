@@ -23,14 +23,13 @@ function App() {
     client.onopen = function() {
         console.log('WebSocket Client Connected');
     
-        function sendNumber() {
+        function sendBack() {
             if (client.readyState === client.OPEN) {
-                var number = Math.round(Math.random() * 0xFFFFFF);
-                client.send(number.toString());
-                setTimeout(sendNumber, 1000);
+                client.send("Message from Client");
+                setTimeout(sendBack, 1000);
             }
         }
-        sendNumber();
+        sendBack();
     };
     
     client.onclose = function() {
@@ -52,8 +51,8 @@ function App() {
     <div className="App">
       <MapContainer
         markers={vehicles}
-        center={{lat:44.228892, lng:-76.489821}}
-        zoom={10}
+        center={{lat:44.245988, lng:-76.534806}}
+        zoom={12}
       />
     </div>
   );

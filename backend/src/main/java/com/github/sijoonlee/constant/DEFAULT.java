@@ -7,7 +7,7 @@ public class DEFAULT {
     public static int producerNumPartitions = 3;
     public static int producerNumReplicas = 1;
     public static String consumerGroupId = "defaultConsumerGroup";
-    public static String autoOffsetResetConfig = "earliest";
+    public static String autoOffsetResetConfig = "latest"; //"earliest";
     public static String dbUrl = "jdbc:postgresql://localhost:5432/kstransit";
     public static String dbUser = "transit";
     public static String dbPassword = "transit";
@@ -17,5 +17,6 @@ public class DEFAULT {
     public static String connectDbUrl = "jdbc:postgresql://postgres:5432/kstransit";
     public static String streamTopicName = "transit-vehicles-latest";
     public static int updateInterval = 5000; // ms
+    public static String gtfsKingstonVehiclesSpec = "https://api.cityofkingston.ca/gtfs-realtime/vehicleupdates.pb";
 
 }

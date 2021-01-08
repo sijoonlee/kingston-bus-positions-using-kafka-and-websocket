@@ -21,6 +21,8 @@ const MapContainer = (props) => {
                     key={index}
                     lat={marker.latitude}
                     lng={marker.longitude}
+                    routeNumber = {marker.route_id}
+                    congestion = {marker.congestion_level}
                 />)
         })
 
