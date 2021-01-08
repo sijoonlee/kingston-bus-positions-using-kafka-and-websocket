@@ -2,13 +2,8 @@
 
 This is to show Kingston Transit Buses' position on Google map in real-time
 
-## Demo
-
-<div>
-    <video height="300" width="400">
-        <source src="busdemo.mp4" type="video/mp4">
-    </video>
-</div>
+## Demo (speedup)
+![busdemo](./busdemo.gif)
 
 ## Running Backend
 1. Go To Directory 'backend'
