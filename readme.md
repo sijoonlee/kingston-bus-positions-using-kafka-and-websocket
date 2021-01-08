@@ -40,7 +40,7 @@ This is to show Kingston Transit Buses' position on Google map in real-time
 ```
 npm run start
 ```
-    - Bus icons will be shown up on the map after few seconds
+- Bus icons will be shown up on the map after few seconds
 
 ## Clean up
 1. Shutdown docker containers
